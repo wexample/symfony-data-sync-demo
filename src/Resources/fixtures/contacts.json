@@ -1,0 +1,8 @@
+{
+  "ada": { "username": "ada", "email": "ada@example.test", "name": "Ada Lovelace", "active": true, "chatId": "chat-ada", "crmId": null },
+  "bob": { "username": "bob", "email": "bob@example.test", "name": "Bob Martin", "active": true, "chatId": null, "crmId": null },
+  "cid": { "username": "cid", "email": "cid@example.test", "name": "Cid Moreau", "active": true, "chatId": null, "crmId": null },
+  "dora": { "username": "dora", "email": "dora@example.test", "name": "Dora Keller", "active": false, "chatId": "chat-dora", "crmId": null },
+  "eve": { "username": "eve", "email": "eve@example.test", "name": "Eve Durand", "active": true, "chatId": "chat-deleted", "crmId": null },
+  "finn": { "username": "finn", "email": "finn@new.example.test", "name": "Finn Olsen", "active": true, "chatId": "chat-finn", "crmId": null }
+}

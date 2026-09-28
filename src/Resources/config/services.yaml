@@ -1,0 +1,19 @@
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+        public: false
+
+    Wexample\SymfonyDataSyncDemo\:
+        resource: '../../{Command,Service}'
+        exclude: '../../Service/DemoRemoteAdapter.php'
+
+    wexample_symfony_data_sync_demo.adapter.chat:
+        class: Wexample\SymfonyDataSyncDemo\Service\DemoRemoteAdapter
+        arguments:
+            $set: chat
+
+    wexample_symfony_data_sync_demo.adapter.crm:
+        class: Wexample\SymfonyDataSyncDemo\Service\DemoRemoteAdapter
+        arguments:
+            $set: crm

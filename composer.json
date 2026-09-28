@@ -1,11 +1,46 @@
 {
   "name": "wexample/symfony-data-sync-demo",
-  "version": "1.0.1",
+  "description": "Demo definitions showing every case of the symfony-data-sync-ds screens",
   "type": "library",
   "license": "MIT",
+  "version": "1.0.1",
   "autoload": {
     "psr-4": {
       "Wexample\\SymfonyDataSyncDemo\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Wexample\\SymfonyDataSyncDemo\\Tests\\": "tests/"
+    }
+  },
+  "authors": [
+    {
+      "name": "weeger",
+      "email": "romain.weeger@wexample.com"
+    }
+  ],
+  "require": {
+    "php": ">=8.5",
+    "wexample/symfony-data-sync": "*",
+    "wexample/symfony-data-sync-ds": "*",
+    "wexample/symfony-helpers": "*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "*"
+  },
+  "repositories": [
+    {
+      "type": "path",
+      "url": "../*",
+      "options": {
+        "symlink": true
+      }
+    }
+  ],
+  "extra": {
+    "install": {
+      "bundle_env": "all"
     }
   }
 }

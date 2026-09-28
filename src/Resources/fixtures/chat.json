@@ -1,0 +1,8 @@
+{
+  "chat-ada": { "username": "ada", "email": "ada@example.test", "display_name": "Ada King", "roles": ["user"], "active": true },
+  "chat-bob": { "username": "bob.m", "email": "BOB@example.test", "display_name": "Bob Martin", "roles": ["user"], "active": true },
+  "chat-dora": { "username": "dora", "email": "dora@example.test", "display_name": "Dora Keller", "roles": ["user"], "active": true },
+  "chat-finn": { "username": "finn", "email": "finn@old.example.test", "display_name": "Finn Olsen", "roles": ["user"], "active": true },
+  "chat-bot": { "username": "rocket.cat", "email": "bot@example.test", "display_name": "Rocket Cat", "roles": ["bot"], "active": true },
+  "chat-ghost": { "username": "ghost", "email": "ghost@example.test", "display_name": "Nobody Knows", "roles": ["user"], "active": true }
+}

@@ -1,0 +1,5 @@
+{
+  "crm-1": { "contact": "Ada Lovelace", "company": "Analytical Engines" },
+  "crm-2": { "contact": "Bob Martinez", "company": "Clean Code Ltd" },
+  "crm-3": { "contact": "Zoe Zimmer", "company": "Nowhere Inc" }
+}
