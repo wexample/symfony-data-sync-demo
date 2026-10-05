@@ -1,6 +1,6 @@
 # symfony-data-sync-demo
 
-Version: 2.0.2
+Version: 2.0.3
 
 Demo definitions showing every case of the symfony-data-sync-ds screens
 
@@ -28,7 +28,7 @@ Visit the [Wexample Suite documentation](https://docs.wexample.com) for the comp
 - php: >=8.5
 - wexample/symfony-data-sync: >=3.0.0
 - wexample/symfony-data-sync-ds: >=2.0.0
-- wexample/symfony-helpers: >=14.0.0
+- wexample/symfony-helpers: >=15.0.0
 
 ## Versioning & Compatibility Policy
 
