@@ -1,6 +1,6 @@
 # symfony-data-sync-demo
 
-Version: 2.0.6
+Version: 2.0.7
 
 Demo definitions showing every case of the symfony-data-sync-ds screens
 
@@ -26,7 +26,7 @@ The suite includes packages for configuration management, file handling, prompts
 - php: >=8.5
 - wexample/symfony-data-sync: >=3.1.0
 - wexample/symfony-data-sync-ds: >=2.0.0
-- wexample/symfony-helpers: >=17.0.0
+- wexample/symfony-helpers: >=18.0.0
 
 ## Versioning & Compatibility Policy
 
