@@ -1,61 +1,20 @@
 # symfony-data-sync-demo
 
-Version: 2.0.7
+Version: 2.0.8
 
 Demo definitions showing every case of the symfony-data-sync-ds screens
 
 ## Table of Contents
 
-- [Integration in the Suite](#integration-in-the-suite)
-- [Dependencies](#dependencies)
-- [Versioning & Compatibility Policy](#versioning--compatibility-policy)
-- [License](#license)
-- [About us](#about-us)
-- [Migration Notes](#migration-notes)
+- [Introduction](#introduction)
 
-## Integration in the Suite
+`symfony-data-sync-demo` gives the showcase something to reconcile on the `symfony-data-sync-ds` screens: a contact list synchronised with two fake remotes, a chat and a CRM, whose fixtures hold one case per decision the engine makes.
 
-This package is part of the Wexample Suite — a collection of high-quality, modular tools designed to work seamlessly together across multiple languages and environments.
+- `demo_chat` pairs by email then username, leaves bots out, disables the account of an inactive contact, creates one for a contact without any, pulls display names and owns emails on both sides. Its plan shows an update, a disable, a link to a vanished account, a field conflict, an exact match, a creation and an unmatched account.
+- `demo_crm` pairs by fuzzy name: it shows an automatic link, a candidate a human links from the screen, and an unmatched record.
 
-### Related Packages
+Once applied, the chat still holds two conflicts (`bob`, `finn`) that the screen settles by keeping one side.
 
-The suite includes packages for configuration management, file handling, prompts, and more. Each package can be used independently or as part of the integrated suite.
+Everything lives in JSON files under `var/data_sync_demo/`, copied from `src/Resources/fixtures/` on first read: no database, no request leaves the application. `bin/console data-sync-demo:reset` restores the fixtures once the demo has been applied.
 
-## Dependencies
-
-- php: >=8.5
-- wexample/symfony-data-sync: >=3.1.0
-- wexample/symfony-data-sync-ds: >=2.0.0
-- wexample/symfony-helpers: >=18.0.0
-
-## Versioning & Compatibility Policy
-
-Wexample packages follow **Semantic Versioning** (SemVer):
-
-- **MAJOR**: Breaking changes
-- **MINOR**: New features, backward compatible
-- **PATCH**: Bug fixes, backward compatible
-
-We maintain backward compatibility within major versions and provide clear migration guides for breaking changes.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-Free to use in both personal and commercial projects.
-
-## About us
-
-[Wexample](https://wexample.com) stands as a cornerstone of the digital ecosystem — a collective of seasoned engineers, researchers, and creators driven by a relentless pursuit of technological excellence. More than a media platform, it has grown into a vibrant community where innovation meets craftsmanship, and where every line of code reflects a commitment to clarity, durability, and shared intelligence.
-
-This packages suite embodies this spirit. Trusted by professionals and enthusiasts alike, it delivers a consistent, high-quality foundation for modern development — open, elegant, and battle-tested. Its reputation is built on years of collaboration, refinement, and rigorous attention to detail, making it a natural choice for those who demand both robustness and beauty in their tools.
-
-Wexample cultivates a culture of mastery. Each package, each contribution carries the mark of a community that values precision, ethics, and innovation — a community proud to shape the future of digital craftsmanship.
-
-Built and maintained by [Romain Weeger](https://weeger.io).
-
-## Migration Notes
-
-When upgrading between major versions, refer to the migration guides in the documentation.
-
-Breaking changes are clearly documented with upgrade paths and examples.
+Install it with `symfony-data-sync` and `symfony-data-sync-ds`, then open `/data-sync/`.
