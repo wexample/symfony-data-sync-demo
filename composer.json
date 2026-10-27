@@ -3,7 +3,7 @@
   "description": "Demo definitions showing every case of the symfony-data-sync-ds screens",
   "type": "library",
   "license": "MIT",
-  "version": "2.0.8",
+  "version": "2.0.9",
   "autoload": {
     "psr-4": {
       "Wexample\\SymfonyDataSyncDemo\\": "src/"
@@ -23,7 +23,7 @@
   "require": {
     "php": ">=8.5",
     "wexample/symfony-data-sync": ">=3.1.2",
-    "wexample/symfony-data-sync-ds": ">=2.0.23",
+    "wexample/symfony-data-sync-ds": ">=3.0.0",
     "wexample/symfony-helpers": ">=18.0.2"
   },
   "require-dev": {
