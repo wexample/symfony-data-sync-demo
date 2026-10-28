@@ -1,6 +1,6 @@
 # symfony-data-sync-demo
 
-Version: 2.0.9
+Version: 2.0.10
 
 Demo definitions showing every case of the symfony-data-sync-ds screens
 
